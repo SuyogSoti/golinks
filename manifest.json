@@ -1,0 +1,29 @@
+{
+  // Required
+  "manifest_version": 3,
+  "name": "GoLinks",
+  "version": "1.0.0",
+
+  // Recommended
+  "description": "redirect go links to real links",
+
+  // Optional
+  "author": "suyog.soti@gmail.com",  
+
+
+  // function
+  "permissions": [
+    "webRequest",
+    "webNavigation",
+    "storage",
+    "tabs",
+    "notifications",
+	"identity",
+	"identity.email",
+	"cookies"
+  ],
+  "background": {
+    "service_worker": "redirector.js"
+  }
+}
+
